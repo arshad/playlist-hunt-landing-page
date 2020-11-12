@@ -9,6 +9,8 @@ export const HeaderBlock = ({ ...props }) => {
       position={["sticky", "relative"]}
       top="0"
       bg="background"
+      borderBottom="1px solid"
+      borderColor="border"
       zIndex="1000"
       {...props}
     >
@@ -21,7 +23,7 @@ export const HeaderBlock = ({ ...props }) => {
             ml={["auto", "auto"]}
             mr="null|10"
           />
-          <ModeToggle ml="0" />
+          {/* <ModeToggle ml="0" /> */}
         </Flexbox>
       </Container>
       <Flexbox

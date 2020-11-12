@@ -3,25 +3,27 @@ export const Tools = ({ ...props }) => (
     <Container variant="md">
       <Flexbox flexDirection="column" textAlign="center">
         <H2 m="0">Tools you'll Learn</H2>
-        <P fontSize="xl|2xl" mt="2" textAlign="center">
-          Get acquainted with these modern tools:
+        <P fontSize="lg|xl" mt="2" textAlign="center">
+          Get acquainted with modern tools great for getting up and running
+          quick, and building on top of free and open source tools where
+          possible:
         </P>
       </Flexbox>
       <Grid gap="4|6|8" mt="4|6|8">
         <Tool
-          picture="placeholder.jpg"
+          picture="gatsby.png"
           name="Gatsby"
           position="Frontend Web Framework"
           bio="You can build hybrid web applications with Gatsby and leverage its powerful plugin ecosystem at the same time."
         />
         <Tool
-          picture="placeholder.jpg"
+          picture="hasura.png"
           name="Hasura"
           position="Backend Framework"
           bio="Generate an API in minutes and edit tables and data by pointing and clicking, rather than fussing with DevOps."
         />
         <Tool
-          picture="placeholder.jpg"
+          picture="auth0.png"
           name="Auth0"
           position="Authentication Framework"
           bio="Get the tough work out of the way with authentication and authorization handled for you."
@@ -33,7 +35,7 @@ export const Tools = ({ ...props }) => (
 
 export const Tool = ({ picture, name, position, bio, ...props }) => (
   <Flexbox flexDirection="column|row" {...props}>
-    <Image src={picture} size="40" rounded="full" overflow="hidden" />
+    <Image src={picture} size="32" rounded="lg" overflow="hidden" />
     <Div flex="1" textAlign="center|left" p="6">
       <P m="0" fontSize="xl" fontWeight="semibold">
         {name}
