@@ -1,29 +1,46 @@
-<Section py="8|12|16|24">
+<Section pt="8|12|16|24">
   <Container>
-    <Grid col="1|2" gap="8|12|16" alignItems="center">
-      <Image
-        src="placeholder.jpg"
-        colStart="null|2"
-        w="full"
-        rounded="lg"
-        overflow="hidden"
-      />
-      <Flexbox
-        flexDirection="column"
-        alignItems="center|flex-start"
-        textAlign="center|left"
-      >
-        <H1 m="0" fontWeight="extrabold" lineHeight="tight">
-          Supercharge your site.
-        </H1>
-        <P fontSize="xl|2xl" mt="2">
-          Build a blazing fast site with Gatsby and Reflex.
-        </P>
-        <ButtonLink href="#" variant="primary">
-          Get Started
-          <Icon name="arrow-right" ml="4" />
-        </ButtonLink>
-      </Flexbox>
-    </Grid>
+    <Flexbox flexDirection="column" textAlign="center">
+      <P fontSize="48" color="primary" mb="0" mt="0">
+        ▲
+      </P>
+      <H1 m="0" fontWeight="extrabold" lineHeight="tight">
+        Build a fullstack Gatsby app
+      </H1>
+      <P color="primary" mt="0">
+        A premium Gatsby course hosted on Egghead.io.
+      </P>
+      <P fontSize="xl|2xl" mt="2">
+        Take the course for intermediate developers and learn how to build an
+        app connecting all the bells and whistles you need for a full scale
+        application, from authentication to layout design.
+      </P>
+      <Grid col="2" gap="4">
+        <Button
+          as="a"
+          href="https://egghead.io/playlists/build-a-full-stack-jamstack-application-with-gatsby-c6f8?af=6xn1w"
+          variant="primary"
+        >
+          Start Watching
+        </Button>
+        <Button as="a" href="https://playlisthunt.dev/" variant="ghost">
+          View Demo <Icon name="arrow-right" ml="4" />
+        </Button>
+      </Grid>
+    </Flexbox>
+    <Image
+      src="browser.jpg"
+      h="40|56|80"
+      mt="12|14|16"
+      margin="0 auto"
+      maxWidth="60%"
+      roundedTop="xl"
+      overflow="hidden"
+      objectPosition="top center"
+      sx={{
+        boxShadow: "0px 6px 30px 12px #eaebec, 0px 0px 4px 2px #dadbdc",
+        "& img": { objectPosition: "top center !important" },
+      }}
+    />
   </Container>
 </Section>
