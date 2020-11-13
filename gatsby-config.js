@@ -20,5 +20,17 @@ module.exports = {
         types: [`Page`, `Post`],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Fullstack Gatsby | Learn to build a fullstack application on Egghead`,
+        short_name: `Fullstack Gatsby`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#3182ce`,
+        display: `standalone`,
+        icon: `content/images/icon.png`,
+      },
+    },
   ],
 };
