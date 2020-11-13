@@ -15,12 +15,6 @@ module.exports = {
     "@reflexjs/gatsby-theme-base",
     "@reflexjs/gatsby-theme-post",
     {
-      resolve: "@reflexjs/gatsby-plugin-metatags",
-      options: {
-        types: [`Page`, `Post`],
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Fullstack Gatsby | Learn to build a fullstack application on Egghead`,
