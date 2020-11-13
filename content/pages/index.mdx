@@ -1,9 +1,30 @@
 ---
-title: Learn Fullstack Gatsby
-excerpt: Learn how to build PlaylistHunt, a fully-featured web application.
+title: Fullstack Gatsby | Learn how to build a fullstack application on Egghead
+excerpt: Learn how to build PlaylistHunt, a fully-featured JAMstack application using Gatsby and other modern tools. Hosted by Egghead.io.
 ---
 
+import { Helmet } from "react-helmet";
 import backgroundDotsUp from "../images/linear-dots-up.svg";
+import OgImage from "../images/og-image.jpg";
+
+<Helmet>
+  {/* <!-- Primary Meta Tags --> */}
+  <title>Fullstack Gatsby | Learn how to build a fullstack application on Egghead</title>
+  <meta name="title" content="Fullstack Gatsby | Learn how to build a fullstack application on Egghead" />
+  <meta name="description" content="Learn how to build PlaylistHunt, a fully-featured JAMstack application using Gatsby and other modern tools. Hosted by Egghead.io." />
+  {/* <!-- Open Graph / Facebook --> */}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://learn.playlisthunt.dev/" />
+  <meta property="og:title" content="Fullstack Gatsby | Learn to build a fullstack application on Egghead" />
+  <meta property="og:description" content="Learn how to build PlaylistHunt, a fullstack JAMstack application using Gatsby and other modern tools. Hosted by Egghead.io." />
+  <meta property="og:image" content={OgImage} />
+  {/* <!-- Twitter --> */}
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://learn.playlisthunt.dev/" />
+  <meta property="twitter:title" content="Fullstack Gatsby | Learn to build a fullstack application on Egghead" />
+  <meta property="twitter:description" content="Learn how to build PlaylistHunt, a fullstack JAMstack application using Gatsby and other modern tools. Hosted by Egghead.io." />
+  <meta property="twitter:image" content={OgImage} />
+</Helmet>
 
 <Block
   src="hero"
