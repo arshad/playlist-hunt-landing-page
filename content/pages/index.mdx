@@ -1,14 +1,37 @@
 ---
-title: Learn
+title: Learn Fullstack Gatsby
 excerpt: Learn how to build PlaylistHunt, a fully-featured web application.
 ---
 
-<Block src="hero" />
+import backgroundDotsUp from "../images/linear-dots-up.svg";
 
-<Block src="tools" bg="muted" />
+<Block
+  src="hero"
+  background={`url(${backgroundDotsUp}) repeat-x center bottom`}
+/>
 
-<Block src="cards" />
+<Block
+  src="tools"
+  bg="muted"
+  borderTop="1px solid"
+  borderBottom="1px solid"
+  borderColor="border"
+/>
 
-<Block src="instructor" bg="muted" />
+<Block
+  src="cards"
+  background={`url(${backgroundDotsUp}) repeat-x center bottom`}
+/>
 
-<Block src="cta" />
+<Block
+  src="instructor"
+  bg="muted"
+  borderTop="1px solid"
+  borderBottom="1px solid"
+  borderColor="border"
+/>
+
+<Block
+  src="cta"
+  background={`url(${backgroundDotsUp}) repeat-x center bottom`}
+/>

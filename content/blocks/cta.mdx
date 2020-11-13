@@ -1,16 +1,24 @@
-<Section py="8|12|16|24" bg="muted">
+import CtaMask from "../images/cta-mask.svg";
+
+<Section py="8|12|16|24">
   <Container>
-    <Div textAlign="center" bg="background" p="10" rounded="3xl">
-      <H2 fontSize="4xl|5xl" m="0">
+    <Div
+      textAlign="center"
+      bg="muted"
+      p="10"
+      rounded="xl"
+      background={`url(${CtaMask}) no-repeat center`}
+    >
+      <H2 fontSize="4xl|5xl" m="0" color="white">
         Ready to get learning?
       </H2>
-      <P fontSize="lg|xl" mt="2">
+      <P fontSize="lg|xl" mt="2" color="white">
         Go from intermediate to advanced in hours.
       </P>
       <Button
         as="a"
         href="https://egghead.io/playlists/build-a-full-stack-jamstack-application-with-gatsby-c6f8?af=6xn1w"
-        variant="primary lg"
+        variant="white lg"
       >
         Start Watching <Icon name="arrow-right" ml="2" />
       </Button>

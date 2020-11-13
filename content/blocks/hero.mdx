@@ -1,19 +1,26 @@
+import UpvoteButton from "../images/upvote-button.svg";
+
 <Section pt="8|12|16|24">
   <Container>
     <Flexbox flexDirection="column" textAlign="center">
-      <P fontSize="48" color="primary" mb="0" mt="0">
+      <P fonSize="48" m="0" color="textMuted">
         ▲
       </P>
-      <H1 m="0" fontWeight="extrabold" lineHeight="tight">
-        Build a fullstack Gatsby app
-      </H1>
-      <P color="primary" mt="0">
-        A premium Gatsby course hosted on Egghead.io.
+      <Div display="flex" alignItems="center">
+        <Image src="upvote-button.svg" h="14|18" mr="1" />
+        <Div>
+          <H1 m="0" fontWeight="extrabold" lineHeight="tight" color="primary">
+            Fullstack Gatsby
+          </H1>
+        </Div>
+      </Div>
+      <P color="textMuted" mt="0">
+        Build a fullstack Gatsby application: a premium course on Egghead.io.
       </P>
-      <P fontSize="xl|2xl" mt="2">
+      <P fontSize="lg|xl" mt="2" maxWidth="64ch">
         Take the course for intermediate developers and learn how to build an
-        app connecting all the bells and whistles you need for a full scale
-        application, from authentication to layout design.
+        app that connects all the bells and whistles you need for a full scale
+        JAMstack application, from authentication to layout design.
       </P>
       <Grid col="2" gap="4">
         <Button
