@@ -1,17 +1,17 @@
 export const Cards = ({ ...props }) => (
-  <Section py="8|12" {...props}>
-    <Container>
+  <section py="8|12" {...props}>
+    <div variant="container">
       <Flexbox flexDirection="column" textAlign="center">
-        <H2 m="0" fontWeight="extrabold" lineHeight="tight">
+        <h2 variant="heading.h2" m="0" fontWeight="extrabold" lineHeight="tight">
           Features you'll Implement
-        </H2>
-        <P>
+        </h2>
+        <p>
           Each feature matches up with a lesson, and has been meticulously
           edited down so you're not suffering through my blazing-fast™️ 20wpm
           typing. Every lesson has a corresponding branch{" "}
           <Link href="https://github.com/gillkyle/playlisthunt">on GitHub</Link>{" "}
           to make sure you never get lost.
-        </P>
+        </p>
       </Flexbox>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
         <Card
@@ -87,8 +87,8 @@ export const Cards = ({ ...props }) => (
           description="One holistic look at the whole course and what you're building."
         />
       </Grid>
-    </Container>
-  </Section>
+    </div>
+  </section>
 );
 
 export const Card = ({
@@ -106,9 +106,10 @@ export const Card = ({
     rounded="lg"
     p="4|6|8"
     position="relative"
-    hoverBorderColor="primary"
     {...props}
-  >
+    _hover={{
+      borderColor: "primary"
+    }}>
     <Link
       href={url}
       position="absolute"
@@ -130,15 +131,15 @@ export const Card = ({
     >
       <Icon name={icon} size="6" />
     </Flexbox>
-    <H3 fontSize="2xl" mt="4|6" mb="0">
+    <h3 variant="heading.h3" fontSize="2xl" mt="4|6" mb="0">
       {heading}
-    </H3>
-    <P mb="0" mt="2">
+    </h3>
+    <p mb="0" mt="2">
       {description} ({duration})
-    </P>
-    <P display="flex" alignItems="center" color="primary">
+    </p>
+    <p display="flex" alignItems="center" color="primary">
       Watch now <Icon name="arrow-right" size="3" />
-    </P>
+    </p>
   </Flexbox>
 );
 
@@ -169,14 +170,14 @@ export const ComingSoonCard = ({
     >
       <Icon name={icon} size="6" />
     </Flexbox>
-    <P fontStyle="italic" mb="0" mt="4" color="canceled">
+    <p fontStyle="italic" mb="0" mt="4" color="canceled">
       Coming soon...
-    </P>
-    <H3 fontSize="2xl" mt="4|6" mb="0" color="canceled">
+    </p>
+    <h3 variant="heading.h3" fontSize="2xl" mt="4|6" mb="0" color="canceled">
       {heading}
-    </H3>
-    <P mb="0" mt="2" color="canceled">
+    </h3>
+    <p mb="0" mt="2" color="canceled">
       {description}
-    </P>
+    </p>
   </Flexbox>
 );

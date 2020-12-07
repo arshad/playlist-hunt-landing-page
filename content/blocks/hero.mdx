@@ -1,38 +1,43 @@
 import UpvoteButton from "../images/upvote-button.svg";
 
-<Section pt="8|12|16|24">
-  <Container>
+<section pt="8|12|16|24">
+  <div variant="container">
     <Flexbox flexDirection="column" textAlign="center">
-      <P fonSize="48" m="0" color="textMuted">
+      <p fonSize="48" m="0" color="textMuted">
         ▲
-      </P>
-      <Div display="flex" alignItems="center">
+      </p>
+      <div display="flex" alignItems="center">
         <Image src="upvote-button.svg" h="14|18" mr="1" />
-        <Div>
-          <H1 m="0" fontWeight="extrabold" lineHeight="tight" color="primary">
+        <div>
+          <h1
+            variant="heading.h1"
+            m="0"
+            fontWeight="extrabold"
+            lineHeight="tight"
+            color="primary">
             Fullstack Gatsby
-          </H1>
-        </Div>
-      </Div>
-      <P color="textMuted" mt="0">
+          </h1>
+        </div>
+      </div>
+      <p color="textMuted" mt="0">
         Build a fullstack Gatsby application: a premium course on Egghead.io.
-      </P>
-      <P fontSize="lg|xl" mt="2" maxWidth="64ch">
+      </p>
+      <p fontSize="lg|xl" mt="2" maxWidth="64ch">
         Take the course for intermediate developers and learn how to build an
         app that connects all the bells and whistles you need for a full scale
         JAMstack application, from authentication to layout design.
-      </P>
+      </p>
       <Grid col="2" gap="4">
-        <Button
+        <button
           as="a"
           href="https://egghead.io/playlists/build-a-full-stack-jamstack-application-with-gatsby-c6f8?af=6xn1w"
-          variant="primary"
+          variant="button.primary"
         >
           Watch Now
-        </Button>
-        <Button as="a" href="https://playlisthunt.dev/" variant="ghost">
+        </button>
+        <button as="a" href="https://playlisthunt.dev/" variant="button.ghost">
           View Demo <Icon name="arrow-right" ml="4" />
-        </Button>
+        </button>
       </Grid>
     </Flexbox>
     <Image
@@ -49,5 +54,5 @@ import UpvoteButton from "../images/upvote-button.svg";
         "& img": { objectPosition: "top center !important" },
       }}
     />
-  </Container>
-</Section>
+  </div>
+</section>
